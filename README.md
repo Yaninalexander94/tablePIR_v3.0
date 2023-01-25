@@ -31,14 +31,14 @@
 
 Для бесплатной загрузки файлов по API в режиме тестирования на облако FireBase необходимо в настройках Storage в правилах прописать публичные
 настройки доступа:
-rules_version = '2';
-service firebase.storage {
-  match /b/{bucket}/o {
-    match /{allPaths=**} {
-      allow read, write: if true;
-    }
-  }
-}
+######rules_version = '2';
+######service firebase.storage {
+######  match /b/{bucket}/o {
+######    match /{allPaths=**} {
+######      allow read, write: if true;
+######    }
+######  }
+######}
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.5.
 
