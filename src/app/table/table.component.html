@@ -1,0 +1,65 @@
+<div class="table">
+  <h1>Список файлов</h1>
+  <table id="table">
+    <thead>
+    <tr>
+      <td id="id">№</td>
+      <td id="name">Наименование файла</td>
+      <td id="weight">Размер файла</td>
+      <td id="date">Дата создания</td>
+      <td id="link">Скачать</td>
+      <td id="delete">Удалить</td>
+    </tr>
+    </thead>
+    <tbody
+      id="dragZone"
+    >
+    <tr
+      *ngFor="let item of files"
+      draggable="true"
+      (dragstart)="dragAndDropHandler(item.id)"
+      id="{{ item.id }}"
+    >
+      <td>{{ item.id }}</td>
+      <td
+        (dblclick)="editTitleFile(item)"
+      >
+        <input
+          class="input-title"
+          id="input-title {{ item.id }}"
+          type="text"
+          value="{{ item.name }}"
+          disabled="{{ false }}"
+        >
+      </td>
+      <td>{{ item.weight }}</td>
+      <td>{{ item.date }}</td>
+      <td
+        class="download"
+        (click)="downloadFileFromServer(item.link)"
+      >Скачать
+      </td>
+      <td
+        class="download"
+        (click)="deleteFile(item.id)"
+      >Удалить
+      </td>
+    </tr>
+    </tbody>
+  </table>
+  <form
+    method="post"
+    enctype="multipart/form-data"
+    id="input-file"
+  >
+    <label class="input-file">
+      <input
+        class="import"
+        type="file"
+        accept="{{extensionsForImport}}"
+        (change)="importFile($event)"
+      >
+      <span>Загрузить файл</span>
+    </label>
+  </form>
+</div>

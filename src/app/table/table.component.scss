@@ -1,0 +1,146 @@
+.table {
+  padding: 20px 150px 150px;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+span {
+  display: flex;
+  justify-content: start;
+  margin-bottom: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  box-shadow: 0px 0px 40px 25px rgb(9 54 86 / 30%);
+  transition: 3s;
+}
+
+table:hover {
+  box-shadow: 0px 0px 40px 25px rgb(9 54 86 / 70%);
+  transition: 3s;
+}
+
+table td {
+  padding: 12px 16px;
+  border: solid 1px;
+}
+
+table thead tr {
+  font-weight: bold;
+  border: 1px solid #e8e9eb;
+  transition: 0.5s;
+}
+
+table tbody tr:hover {
+  background: #112434;
+  transition: 0.5s;
+}
+
+table tr {
+  border: 1px solid #e8e9eb;
+}
+
+table thead tr td#id {
+  width: 50px;
+}
+
+table thead tr td#link, #date, #weight {
+  width: 150px;
+}
+
+.input-file {
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+}
+.input-file span {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  outline: none;
+  text-decoration: none;
+  vertical-align: middle;
+  color: rgb(255 255 255);
+  text-align: center;
+  background-color: #030f18;
+  border: 1px solid #dbfff1;
+  line-height: 22px;
+  box-sizing: border-box;
+  margin: 0;
+  transition: 0.5s;
+  padding: 10px 30px;
+}
+.input-file input[type=file] {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+  display: block;
+  width: 0;
+  height: 0;
+}
+
+/* Focus */
+.input-file input[type=file]:focus + span {
+  box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
+}
+
+/* Hover/active */
+.input-file:hover span {
+  background: #112434;
+  box-shadow: 0px 0px 40px 2px rgb(9 54 86 / 70%);
+  transition: 0.5s;
+}
+.input-file:active span {
+  background-color: rgba(57, 137, 232, 0.25);
+}
+
+/* Disabled */
+.input-file input[type=file]:disabled + span {
+  background-color: #eee;
+}
+
+#dragZone {
+  cursor: all-scroll;
+}
+
+.drag-elem {
+  background-color: #2f587c;
+}
+
+.drag-zone {
+  background-color: #0a1623;
+  border: 2px dashed white;
+  box-shadow: 0px 0px 40px 2px rgba(109, 181, 232, 0.7);
+}
+
+form {
+  height: 100px;
+}
+
+.download {
+  cursor: pointer;
+}
+
+.input-title {
+  background: none;
+  color: white;
+  border: none;
+  width: 100%;
+  font-family: inherit; /* 1 */
+  font-size: inherit; /* 1 */
+  line-height: inherit; /* 1 */
+  margin: 0; /* 2 */
+}
+
+.input-title-edit {
+  background: #112434;
+  color: white;
+  width: 100%;
+  border: none;
+}
