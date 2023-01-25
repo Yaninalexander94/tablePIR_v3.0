@@ -18,16 +18,16 @@
 4. Файлы в таблице скачиваются методом получения из FireBase ссылки на скачивание файла и открытии ссылки в новой вкладке (для предпросмотра
 (не скачивания) pdf файлов).
 
-##Дополнительная информация
+## Дополнительная информация
 Инициализация параметров БД сервера FireBase настраивается в константе 
-#firebaseConfig = {
+# firebaseConfig = {
  # apiKey: 'AIzaSyB0rSDN3NHe-9kFr1GXT9DH2frz9i_C0Ho',
-  #authDomain: 'tablepir.firebaseapp.com',
-  #projectId: 'tablepir',
-  #storageBucket: 'tablepir.appspot.com',
-  #messagingSenderId: '949823706019',
-  #appId: '1:949823706019:web:e4366655025ba881734016',
-#};
+  # authDomain: 'tablepir.firebaseapp.com',
+  # projectId: 'tablepir',
+  # storageBucket: 'tablepir.appspot.com',
+  # messagingSenderId: '949823706019',
+  # appId: '1:949823706019:web:e4366655025ba881734016',
+# };
 
 Для бесплатной загрузки файлов по API в режиме тестирования на облако FireBase необходимо в настройках Storage в правилах прописать публичные
 настройки доступа:
