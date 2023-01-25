@@ -18,7 +18,8 @@
 4. Файлы в таблице скачиваются методом получения из FireBase ссылки на скачивание файла и открытии ссылки в новой вкладке (для предпросмотра
 (не скачивания) pdf файлов).
 
-Инициализация параметров БД сервера FireBase настраивается в константе firebaseConfig = {
+Инициализация параметров БД сервера FireBase настраивается в константе 
+firebaseConfig = {
   apiKey: 'AIzaSyB0rSDN3NHe-9kFr1GXT9DH2frz9i_C0Ho',
   authDomain: 'tablepir.firebaseapp.com',
   projectId: 'tablepir',
