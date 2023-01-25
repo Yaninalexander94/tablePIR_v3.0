@@ -21,7 +21,7 @@
 ## Дополнительная информация
 Инициализация параметров БД сервера FireBase настраивается в константе 
  firebaseConfig = {
-   & apiKey: 'AIzaSyB0rSDN3NHe-9kFr1GXT9DH2frz9i_C0Ho',
+   // apiKey: 'AIzaSyB0rSDN3NHe-9kFr1GXT9DH2frz9i_C0Ho',
    authDomain: 'tablepir.firebaseapp.com',
    projectId: 'tablepir',
   storageBucket: 'tablepir.appspot.com',
